@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>dogHouse</title>
+    <link rel="shortcut icon" href="./assets/logoNavegador.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./assets/logoHeader.svg" alt="Logo Dog House">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ancla" title="Ir a Inicio">Inicio</a></li>
+                <li><a href="#ancla1" title="Ir a Nosotros">Nosotros</a></li>
+                <li><a href="#ancla2" title="Ir a Servicios">Servicios</a></li>
+                <li><a href="#ancla3" title="Ir a Comunidad">Comunidad</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><img src="./assets/instagram.svg" alt="Ir a Instagram"></a></li>
+                <li><a href=""><img src="./assets/bolsitaCompras.svg" alt="Español"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="./assets/perritoInicio.png" alt="Inicio Perrito">
+            </div>
+            <div>
+                <h1>
+                    ¿En cuál provincia<br>de España vives?
+                </h1>
+                <form action="" id="formInicio">                    
+                    <input type="text" id="ciudadUsuario">
+                    <button type="submit"><img src="./assets/lupita.svg" alt="Buscar sucursales"></button>
+                </form>
+            </div>
+        </section>
+        <section class="sectionNosotros">
+            <h2>Perros bien cuidados.<b>Perros felices.</b></h2>
+            <p><b>Desde 2016, comenzamos en Madrid esta hermosa aventura.</b> Cuidar de los mejores amigos que podemos
+                tener, ofreciendoles actividades al aire libre en nuestros jardines, cuidados veterinarios, juegos
+                recreativos, paseos, y por supuesto, mucho amor. Desde entonces nos hemos expandido por varias ciudades
+                de España con el objetivo de seguir creciendo y sobre todo, seguir jugando con ellos. Conoce nuestras
+                instalaciones en nuestro Instagram!</p>
+        </section>
+        <section>
+            <div>
+                <div class="card1">
+                    <h3><b>Guardería</b> por hora</h3>
+                    <img src="./assets/guarderiaPorHora.png" alt="Guardería por hora">
+                    <p>La estadía es por horas. Las puedes distribuir en los días que quieras.
+                        El máximo de horas en la jornada es de 12. Si las horas ingresadas superan esa cantidad las
+                        puedes usar otro día.</p>
+                    <p>A solo <b>5</b>Є por hora</p>
+                </div>
+                <div class="card2">
+                    <h3><b>Control</b> veterinario</h3>
+                    <img src="./assets/servicioVeterinario.png" alt="Guardería por hora">
+                    <p>Junto a profesionales veterinarios, le hacemos a tu mascota un chequeo general y analíticas.
+                        Según el caso le hacemos la aplicación de las vacunas que tenga pendientes incluído en el
+                        precio.</p>
+                    <p>A solo <b>45</b>Є</p>
+                </div>
+                <div class="card3">
+                    <h3><b>Peluquería</b> canina</h3>
+                    <img src="./assets/peluqueriaCanina.png" alt="Guardería por hora">
+                    <p>Un completo servicio de peluquería, el cual lucirán un arreglo cómodo y actual, tratando siempre
+                        de realzar la belleza y personalidad de cada raza. Incluye corte de cabello uñas y baño.</p>
+                    <p>A solo <b>30</b>Є</p>
+                </div>
+            </div>
+            <button type="submit" id="reservarAhora">Reserva ahora!</button>
+        </section>
+        <section class="sectionComunidad">
+            <p>Recibe a tu correo todas las novedades sobre el cuidado de tu mascota, alimentación, consejos para su
+                cuidado. Info sobre exposiciones, eventos y muchas promos y cupones de descuento en el precio de
+                cualquiera de nuestros servicios.<br><b>TE INVITAMOS A FORMAR PARTE DE NUESTRA COMUNIDAD!</b></p>
+            <div>
+                <form action="">
+                    <label for="comunidadNombreUsuario">Nombre y Apellido</label><input type="text"
+                        id="comunidadNombreUsuario" />
+                </form>
+                <form action="">
+                    <label for="comunidadNombreMascota">Nombre de tu mascota</label><input type="text"
+                        id="comunidadNombreMascota" />
+                </form>
+                <form action="">
+                    <label for="comunidadCiudadUsuario">Ciudad en la que vives</label><input type="text"
+                        id="comunidadCiudadUsuario" />
+                </form>
+                <form action="">
+                    <label for="comunidadEdadMascota">Edad (años)</label><input type="text" id="comunidadEdadMascota" />
+                </form>
+                <form action="">
+                    <label for="comunidadMailUsuario">E-mail</label><input type="email" id="comunidadMailUsuario" />
+                </form>
+                <form action="">
+                    <label for="comunidadRazaMascota">Raza</label><input type="text"
+                        id="comunidadRazaMascota"/>
+                </form>
+
+            </div>
+            <div>
+                <input type="radio" name="condiciones" id="aceptoCondiciones" value="condiciones">
+                <label for="aceptoCondiciones">Acepto todos los términos y condiciones. Puedes leerlos <a
+                        href="">aquí.</a></label>
+            </div>
+            <button type="submit" id="enviarComunidad">Enviar</button>
+        </section>
+        <section class="seccionReserva">
+            <div>
+                <img src="./assets/perritosReserva.png" alt="Haz tu reserva!">
+                <div>
+                    <div>
+                        <form action="" method="post">
+                            <label for="horasGuarderia">Guardería:<br>Cantidad de horas
+                                <input type="number" id="horasGuarderia" />
+                            </label>
+                        </form>
+                        <form action="" method="post">
+                            <label for="peluqueriaSiNo">Peluquería canina<br>(si / no)
+                                <input type="text" id="peluqueriaSiNo" />
+                            </label>
+                        </form>
+                        <form action="" method="post">
+                            <label for="controlSiNo">Control veterinario<br>(si / no)
+                                <input type="text" id="controlSiNo" />
+                            </label>
+                        </form>
+                        <form action="" method="post">
+                            <label for="codigoDescuento">¿Tienes código de<br>descuento?
+                                <input type="text" id="codigoDescuento" />
+                            </label>
+                        </form>
+                    </div>
+                    <button type="submit" id="enviarReserva">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <div class="seccionConfirmarReserva">
+            <div>
+                <p>¡Gracias por confiar en nosotros!</p>
+                <p>Has reservado * horas. Con control veterinario.
+                    Sin servicio de peluquería canina.</p>
+                <p>Total = 135€ </p>
+                <p>Completa los siguientes campos con tus datos y nos pondremos en contacto contigo dentro de la mayor
+                brevedad posible para coordinar los servicios reservados.<br><b>EL PAGO SE REALIZA PERSONALMENTE
+                CUANDO NOS VISITEN!</b></p>
+            </div>
+            <div>
+                <form action="">
+                    <label for="reservaNombreUsuario">Nombre y Apellido</label><input type="text"
+                        id="reservaNombreUsuario" />
+                </form>
+                <form action="">
+                    <label for="reservaMovilUsuario">Teléfono móvil</label><input type="number"
+                        id="reservaMovilUsuario" />
+                </form>
+                <form action="">
+                    <label for="reservaCiudadUsuario">Ciudad en la que vives</label><input type="text" id="reservaCiudadUsuario"/>
+                </form>
+                <form action="">
+                    <label for="reservaMailUsuario">E-mail</label><input type="email" id="reservaMailUsuario"/>
+                </form>
+            </div>
+            <div>
+                <button type="submit" id="btnConfirmarReserva">Enviar</button>
+                <button type="submit" id="btnCancelarReserva">Cancelar</button>
+            </div>
+        </div>
+    </main>
+<script src="./JS/javaScript.js"></script>
+</body>
+
+</html>
